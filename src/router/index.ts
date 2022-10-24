@@ -18,6 +18,16 @@ const router = createRouter({
           component: () => import('../pages/WebRTC/base.vue')
         }
       ]
+    },
+    {
+      path: '/three',
+      children: [
+        {
+          path: 'base',
+          name: 'baseThree',
+          component: () => import('../pages/three/base.vue')
+        }
+      ]
     }
   ] as RouteRecordRaw[]
 })
