@@ -1,0 +1,1 @@
+import{o as r,p as s}from"./index.2be33d33.js";const a=(e,t)=>{const c=e.__vccOpts||e;for(const[o,n]of t)c[o]=n;return c},_={};function f(e,t){return r(),s("p",null,"\u8FD9\u4E2A\u662FWebRTC\u7684\u57FA\u7840\u793A\u4F8B")}const p=a(_,[["render",f]]);export{p as default};
