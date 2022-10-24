@@ -1,31 +1,35 @@
-<script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="app">
+    <el-menu
+      :default-active="activeIndex"
+      class="el-menu-demo"
+      mode="horizontal"
+      @select="handleSelect"
+    >
+      <el-menu-item index="base">首页</el-menu-item>
+      <el-sub-menu index="2">
+        <template #title>WebRTC</template>
+        <el-menu-item index="/rtc/base">基础示例</el-menu-item>
+        <el-menu-item index="2-2">屏幕录制</el-menu-item>
+        <el-menu-item index="2-3">多对多连麦</el-menu-item>
+      </el-sub-menu>
+      <el-menu-item index="3">Three.js</el-menu-item>
+    </el-menu>
+    <router-view />
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+<script lang="ts" setup>
+import router from './router'
+import { ref } from 'vue';
+const activeIndex = ref('base');
+const handleSelect = (key: string) => {
+  router.push(key)
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+</script>
+
+<style lang="scss">
+.app {
+  width: 100%;
 }
 </style>
