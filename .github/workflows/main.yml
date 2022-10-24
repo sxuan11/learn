@@ -1,4 +1,6 @@
-push:  # 指定触发事件
+name: 'deploy'
+on:
+  push:  # 指定触发事件
     branches:
       - main  # 指定触发 action 的分支
 
