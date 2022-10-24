@@ -1,6 +1,6 @@
 push:  # 指定触发事件
     branches:
-      - master  # 指定触发 action 的分支
+      - main  # 指定触发 action 的分支
 
 jobs:
   main:
@@ -17,7 +17,7 @@ jobs:
     - name: 安装依赖
       run: |
           npm install
-        
+
     # 执行构建步骤
     - name: 构建
       run: |
