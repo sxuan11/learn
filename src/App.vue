@@ -31,13 +31,13 @@
 <script lang="ts" setup>
 import router from './router'
 import { ref } from 'vue';
+import { useDark, useToggle } from '@vueuse/core'
+import { Moon, Sunny } from '@element-plus/icons-vue';
 const activeIndex = ref('base');
 const handleSelect = (key: string) => {
   router.push(key)
 }
 
-import { useDark, useToggle } from '@vueuse/core'
-import { Moon, Sunny } from '@element-plus/icons-vue';
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
 </script>
