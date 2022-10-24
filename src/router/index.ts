@@ -2,10 +2,10 @@ import { createRouter, createWebHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('learn'),
   routes: [
     {
-      path: '/',
+      path: '/base',
       name: 'home',
       component: () => import('@/pages/a.vue'),
     },
