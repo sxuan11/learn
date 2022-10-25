@@ -17,6 +17,7 @@
         <el-sub-menu index="three">
           <template #title>Three.js</template>
           <el-menu-item index="/three/base">基础示例</el-menu-item>
+          <el-menu-item index="/three/love">爱心</el-menu-item>
         </el-sub-menu>
       </el-menu>
       <el-switch

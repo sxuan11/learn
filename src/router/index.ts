@@ -26,6 +26,11 @@ const router = createRouter({
           path: 'base',
           name: 'baseThree',
           component: () => import('../pages/three/base.vue')
+        },
+        {
+          path: 'love',
+          name: 'loveThree',
+          component: () => import('../pages/three/love.vue')
         }
       ]
     }
