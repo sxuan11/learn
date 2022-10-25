@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import * as THREE from 'three';
+// @ts-ignore
 import Stats from 'three/addons/libs/stats.module.js';
 import { onMounted } from "vue";
 // const scene = new THREE.Scene();
@@ -50,7 +51,7 @@ const texture = loader.load( 'textures/uv_grid_opengl.jpg' );
 
 texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
 texture.repeat.set( 0.008, 0.008 );
-
+// @ts-ignore
 function addShape( shape, extrudeSettings, color, x, y, z, rx, ry, rz, s ) {
 
   // flat shape with texture
@@ -87,7 +88,7 @@ function addShape( shape, extrudeSettings, color, x, y, z, rx, ry, rz, s ) {
   // addLineShape( shape, color, x, y, z, rx, ry, rz, s );
 
 }
-
+// @ts-ignore
 function addLineShape( shape, color, x, y, z, rx, ry, rz, s ) {
 
   // lines
@@ -140,6 +141,7 @@ renderer.setPixelRatio( window.devicePixelRatio );
 renderer.setSize( window.innerWidth, window.innerHeight );
 
 let stats = new Stats();
+// @ts-ignore
 function onPointerDown( event ) {
 
   if ( event.isPrimary === false ) return;
@@ -151,7 +153,7 @@ function onPointerDown( event ) {
   document.addEventListener( 'pointerup', onPointerUp );
 
 }
-
+// @ts-ignore
 function onPointerMove( event ) {
 
   if ( event.isPrimary === false ) return;
@@ -163,7 +165,7 @@ function onPointerMove( event ) {
 }
 
 function onPointerUp() {
-
+  // @ts-ignore
   if ( event.isPrimary === false ) return;
 
   document.removeEventListener( 'pointermove', onPointerMove );
