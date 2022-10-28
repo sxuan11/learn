@@ -1,1 +1,0 @@
-import{_ as e}from"./plugin-vueexport-helper.2444895f.js";import{o as c,c as r}from"./index.e8d3efcb.js";const o={};function n(t,a){return c(),r("p",null,"mix page")}const m=e(o,[["render",n]]);export{m as default};
