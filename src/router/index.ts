@@ -16,6 +16,11 @@ const router = createRouter({
           path: 'base',
           name: 'baseRtc',
           component: () => import('../pages/WebRTC/base.vue')
+        },
+        {
+          path: 'screen-record',
+          name: 'screenRecord',
+          component: () => import('../pages/WebRTC/screen-record.vue')
         }
       ]
     },
