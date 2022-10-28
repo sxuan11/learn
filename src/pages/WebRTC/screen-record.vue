@@ -1,4 +1,5 @@
 <template>
+  <div>使用提示: 先开启屏幕录制后才可以进行后续操作，使用屏幕共享</div>
   <el-button @click="startLocalRecord">开启本地屏幕录制</el-button>
   <el-button @click="endLocalRecord" type="danger">结束本地屏幕录制</el-button>
   <el-button @click="replayLocalRecord" type="info">回放本地屏幕录制</el-button>

@@ -18,6 +18,11 @@ const router = createRouter({
           component: () => import('../pages/WebRTC/base.vue')
         },
         {
+          path: 'pip',
+          name: 'pip',
+          component: () => import('../pages/WebRTC/pip.vue')
+        },
+        {
           path: 'screen-record',
           name: 'screenRecord',
           component: () => import('../pages/WebRTC/screen-record.vue')
