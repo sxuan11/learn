@@ -21,6 +21,11 @@ const router = createRouter({
           path: 'screen-record',
           name: 'screenRecord',
           component: () => import('../pages/WebRTC/screen-record.vue')
+        },
+        {
+          path: 'mix-screen',
+          name: 'mixScreen',
+          component: () => import('../pages/WebRTC/mix-screen.vue')
         }
       ]
     },

@@ -12,6 +12,7 @@
           <template #title>WebRTC</template>
           <el-menu-item index="/rtc/base">基础示例</el-menu-item>
           <el-menu-item index="/rtc/screen-record">屏幕录制</el-menu-item>
+          <el-menu-item index="/rtc/mix-screen">前端混流</el-menu-item>
           <el-menu-item index="2-3">多对多连麦</el-menu-item>
         </el-sub-menu>
         <el-sub-menu index="three">
